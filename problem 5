@@ -1,0 +1,34 @@
+var arr = ['a', 'b', 'c', 'd', 'c', 'b', 'b', 'c', 'a', 'e', 'b', 'e'];
+var counts = {};
+
+for (var i = 0; i < arr.length; i++) {
+  var num = arr[i];
+    
+ if (counts[num] = counts[num]) {
+    counts[num] = (counts[num] + 1);
+  } else {
+    counts[num] = 1; 
+  }  
+};
+
+var valueOfIndex = 0;
+var lowestValueOfIndex = 100;
+for ( let index in counts) {
+  if (counts[index] > valueOfIndex) {
+    valueOfIndex = counts[index];
+  } if (counts[index] < lowestValueOfIndex) {
+    lowestValueOfIndex = counts[index];
+  }
+};
+
+for ( let i in counts) {
+  if (counts[i] == valueOfIndex) {
+    console.log('most used letter is: ' + i + ' it was used ' + valueOfIndex + ' times.');
+  }
+};
+
+for ( let i in counts) {
+  if (counts[i] == lowestValueOfIndex) {
+    console.log('least used letter is: ' + i + ' it was used ' + lowestValueOfIndex + ' times.');
+  }
+};
