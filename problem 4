@@ -1,0 +1,11 @@
+const array = [34, 203, 16, 46, 34, 432, 342, 124, 33, 188, 12];
+
+const sumOfArray = array.reduce(function(accumulator, currentValue) {
+  return accumulator + currentValue;
+}) 
+
+function sumAndAverage(sumOfArray) {
+   return ((sumOfArray) / (array.length));
+}
+
+console.log(sumAndAverage(sumOfArray));
