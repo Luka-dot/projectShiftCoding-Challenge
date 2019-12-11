@@ -1,0 +1,15 @@
+var Rv = {
+    arr1: ['a', 'b', 'c', 'a', 'a', 'b', 'd'],
+    arr2: ['a', 'b', 'b', 'a', 'e', 'c', 'c', 'g'],
+    arr3: []
+};
+
+for ( let i = 0; i < Rv.arr1.length; i++) {
+  for (let t = 0; t < Rv.arr2.length; t++) {
+    if (Rv.arr1[i] == Rv.arr2[t]) {
+      Rv.arr3.push(Rv.arr1[i]);
+      i++;
+    }
+  }
+};
+console.log(Rv.arr3.sort());
