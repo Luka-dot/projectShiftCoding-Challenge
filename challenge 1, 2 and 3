@@ -1,0 +1,13 @@
+alert("DURHAM is awesome!");
+
+const bands = ['Kiss', 'Aerosmith', 'ACDC', 'Led Zeppelin', 'Nickelback'];
+
+for (oneBand = 0; oneBand < bands.length; oneBand++) {
+    if (bands[oneBand] !== 'Nickelback')  {
+        console.log('I love ' + bands[oneBand]);
+    } else if (bands[oneBand] === 'Nickelback') {
+
+        console.log('I DONT like ', bands[oneBand]);
+    }
+
+};
